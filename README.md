@@ -2,8 +2,8 @@
 ## Comparaison des assistants de génération de code (ChatGPT, Gemini, Microsoft Copilot)
 
 ### Binôme
-- Étudiant 1 : Romain LE SOURD
-- Étudiant 2 : Julian MAZERAT
+- Romain LE SOURD
+- Julian MAZERAT
 
 ---
 
