@@ -89,6 +89,33 @@ Fonctionnalités attendues :
 Contraintes de conception :
 - Utiliser l’héritage (ex : ChambreStandard, ChambreLuxe)
 - Utiliser le polymorphisme pour le calcul du prix
+
+---
+
+## 4. Description des implémentations
+
+### 4.1 Implémentation avec ChatGPT
+- Description générale :
+- Points forts observés :
+- Limites observées :
+  - pas d'interface console après le 1er prompt
+  - après 2e prompt pour ajouter une interface console, celle-ci est faite avec l'objet Scanner (mais ChatGPT n'explique pas son utilisation) et l'implémentation pour céer une réservation est mauvaise d'un point de vue conception, non généralisable car elle prend le 1er nom de la liste avec la 1ere chambre de la liste.
+
+---
+
+### 4.2 Implémentation avec Gemini
+- Description générale :
+- Points forts observés :
+- Limites observées :
+
+---
+
+### 4.3 Implémentation avec Microsoft Copilot
+- Description générale :
+- Points forts observés :
+- Limites observées :
+
+---
 - Respecter l’encapsulation
 - Fournir un point d’entrée avec une classe Main
 - Fournir un exemple d’utilisation dans la méthode main
