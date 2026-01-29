@@ -65,6 +65,7 @@ hotel-management-ai/
 │ └── src/  
 │  
 └── README.md  
+└── .gitignore    
 
 Chaque dossier contient une implémentation complète et indépendante de la même application, générée par l’outil correspondant. Le prompt utilisé pour générer l'application est identique pour chaque outil IA afin de garantir une comparaison objective et équitable des résultats, basée les mêmes critères.
 Le prompt est le suivant : 
