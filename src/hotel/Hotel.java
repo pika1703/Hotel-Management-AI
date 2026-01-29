@@ -10,10 +10,12 @@ public class Hotel {
 
     private List<Chambre> chambres;
     private List<Reservation> reservations;
+    private List<Client> clients;
 
     public Hotel() {
         chambres = new ArrayList<>();
         reservations = new ArrayList<>();
+        clients = new ArrayList<>();
     }
 
     public void ajouterChambre(Chambre chambre) {
@@ -30,4 +32,17 @@ public class Hotel {
             System.out.println("----------------------");
         }
     }
+    
+    public void ajouterClient(Client client) {
+        clients.add(client);
+    }
+
+    public List<Client> getClients() {
+        return clients;
+    }
+
+    public List<Chambre> getChambres() {
+        return chambres;
+    }
+
 }
