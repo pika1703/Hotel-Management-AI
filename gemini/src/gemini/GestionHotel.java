@@ -1,4 +1,4 @@
-package copilot;
+package gemini;
 import java.util.*;
 
 //--- CLASSES DE BASE ---
