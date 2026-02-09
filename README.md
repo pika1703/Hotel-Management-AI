@@ -89,6 +89,11 @@ Fonctionnalités attendues :
 Contraintes de conception :
 - Utiliser l’héritage (ex : ChambreStandard, ChambreLuxe)
 - Utiliser le polymorphisme pour le calcul du prix
+- Respecter l’encapsulation
+- Fournir un point d’entrée avec une classe Main
+- Fournir un exemple d’utilisation dans la méthode main
+
+Merci de fournir l’ensemble des classes nécessaires avec une architecture orientée objet cohérente.
 
 ---
 
@@ -148,9 +153,3 @@ L'architecture repose sur une séparation des entités métiers :
 - Limites observées :
 
 ---
-- Respecter l’encapsulation
-- Fournir un point d’entrée avec une classe Main
-- Fournir un exemple d’utilisation dans la méthode main
-
-Merci de fournir l’ensemble des classes nécessaires avec une architecture orientée objet cohérente.
-
