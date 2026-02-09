@@ -149,7 +149,34 @@ L'architecture repose sur une séparation des entités métiers :
 
 ### 4.3 Implémentation avec Microsoft Copilot
 - Description générale :
+À partir du prompt initial, Copilot a généré une application Java de gestion hôtelière simplifiée, fonctionnant exclusivement en mode console et respectant les principes fondamentaux de la programmation orientée objet.
+
+L’application repose sur une architecture claire, composée des classes suivantes :
+    Chambre (classe abstraite)
+    ChambreStandard et ChambreLuxe (héritage + polymorphisme)
+    Client
+    Reservation
+    Hotel
+    Main (point d’entrée)
+
+Chaque classe est autonome, cohérente et encapsule correctement ses données.
+La logique métier est bien séparée :
+    Les chambres définissent leur propre logique de calcul du prix via une méthode polymorphe.
+    Les réservations associent un client, une chambre et une période, et calculent le prix total.
+    L’hôtel centralise la gestion des chambres et des réservations, sans base de données.
+    La classe Main illustre un scénario d’utilisation complet.
+
+L’ensemble respecte les contraintes imposées :
+application console, POO, héritage, polymorphisme, encapsulation, absence de base de données et absence de bibliothèques externes.
+
 - Points forts observés :
+  - Respect rigoureux des principes de la POO
+  - Architecture très claire et lisible
+  - Conformité globale au prompt
+
 - Limites observées :
+  - pas d'interface console après le 1er prompt
+  - après 2e prompt pour ajouter une interface console, celle-ci est faite avec l'objet Scanner mais Copilot n'explique pas son utilisation.
+  - La logique actuelle ne vérifie pas : la disponibilité d’une chambre,les conflits de dates,la recherche de clients ou de chambres. Cela peut être considéré comme correct pour une version minimaliste
 
 ---
