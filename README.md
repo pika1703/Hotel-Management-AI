@@ -95,8 +95,25 @@ Contraintes de conception :
 ## 4. Description des implémentations
 
 ### 4.1 Implémentation avec ChatGPT
-- Description générale :
-- Points forts observés :
+- Description générale :  
+À partir du prompt fourni, ChatGPT a généré une application de gestion hôtelière simplifiée en Java, fonctionnant en mode console et respectant les principes fondamentaux de la programmation orientée objet.  
+L’application est structurée autour des classes suivantes :  
+Chambre (classe abstraite)  
+ChambreStandard et ChambreLuxe (héritage)  
+Client  
+Reservation  
+Hotel  
+Main (point d’entrée)  
+La logique métier est clairement séparée. Les chambres encapsulent leur propre logique de calcul de prix. Les réservations associent un client, une chambre et une durée. La classe Hotel centralise la gestion des entités.   
+Le calcul du prix d’une réservation repose sur le polymorphisme, chaque type de chambre redéfinissant sa propre méthode de calcul.  
+Un exemple d’utilisation est fourni dans la méthode main, permettant de créer des objets et d’afficher une réservation dans la console.  
+  
+- Points forts observés :  
+  - Respect des principes de la POO  
+  - Architecture claire et lisible
+  - Code compréhensible et commenté
+  - Conformité au prompt  
+  
 - Limites observées :
   - pas d'interface console après le 1er prompt
   - après 2e prompt pour ajouter une interface console, celle-ci est faite avec l'objet Scanner (mais ChatGPT n'explique pas son utilisation) et l'implémentation pour céer une réservation est mauvaise d'un point de vue conception, non généralisable car elle prend le 1er nom de la liste avec la 1ere chambre de la liste.
@@ -105,8 +122,23 @@ Contraintes de conception :
 
 ### 4.2 Implémentation avec Gemini
 - Description générale :
-- Points forts observés :
-- Limites observées :
+L’application produite par Gemini est un système de gestion hôtelière en Java, fonctionnant intégralement en mode console.  
+L'architecture repose sur une séparation des entités métiers :  
+  - Modèle de données : Une classe abstraite Chambre définit le socle commun, déclinée en deux sous-classes spécialisées : ChambreStandard et ChambreLuxe.  
+  - Logique de calcul : Le polymorphisme est utilisé pour traiter les spécificités tarifaires (frais de service fixes pour le luxe vs tarif linéaire pour le standard).  
+  - Gestion des flux : Une classe Reservation fait le lien entre un objet Client et un objet Chambre, centralisant la génération de la facture.  
+  - Interface : Le point d'entrée (main) simule un catalogue de chambres et permet une interaction interactive via la classe Scanner.  
+    
+- Points forts observés :  
+  - Compréhension contextuelle  
+  - Utilisation pertinente des concepts POO
+  - Lisibilité et Sémantique
+  
+- Limites observées :  
+  - Architecture monolithique  
+  - Attributs superflus  
+  - Fragilité de l'interface
+  - Encapsulation partielle  
 
 ---
 
